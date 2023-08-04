@@ -1,60 +1,6 @@
 let timeText = document.getElementById("timeText");
 let greetText = document.getElementById("greetText");
 
-function function2() {
-  // Check if the alarm should be triggered
-  const slotOne = document.getElementById("slotOne").value;
-  const slotTwo = document.getElementById("slotTwo").value;
-  const slotThree = document.getElementById("slotThree").value;
-  const slotFour = document.getElementById("slotFour").value;
-
-  const date = new Date();
-  const hours = date.getHours();
-
-  // Get the selected values from the four dropdowns
-  let wakeTime =
-    document.getElementById("slotOne").options[
-      document.getElementById("slotOne").selectedIndex
-    ].text;
-  let lunchTime =
-    document.getElementById("slotTwo").options[
-      document.getElementById("slotTwo").selectedIndex
-    ].text;
-  let napTime =
-    document.getElementById("slotThree").options[
-      document.getElementById("slotThree").selectedIndex
-    ].text;
-  let nightTime =
-    document.getElementById("slotFour").options[
-      document.getElementById("slotFour").selectedIndex
-    ].text;
-
-  // Update the text content of the guide div
-  document.getElementById("wakeTime").textContent = wakeTime;
-  document.getElementById("lunchTime").textContent = lunchTime;
-  document.getElementById("napTime").textContent = napTime;
-  document.getElementById("nightTime").textContent = nightTime;
-
-//  for images
-  if (hours === parseInt(slotOne)) {
-    image = "./img/Component.png"; // 6:00AM - 10:00AM
-    wakeTime.innerHTML;
-  } else if (hours === parseInt(slotTwo)) {
-    image = "./img/afternoon.jpg"; // 10:00AM - 2:00PM
-    timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
-    // greetText.innerHTML = `LET'S HAVE SOME LUNCH !!`;
-  } else if (hours === parseInt(slotThree)) {
-    image = "./img/Group 5183.png"; // 4:00PM - 7:00PM
-    timeText.innerHTML = `GOOD EVENING !!`;
-    // greetText.innerHTML = `STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!`;
-  } else if (hours === parseInt(slotFour)) {
-    image = "./img/Component 32.png"; // 7:00PM - 5:00AM
-    timeText.innerHTML = `GOOD NIGHT !!`;
-    // greetText.innerHTML = `CLOSE YOUR EYES AND GO TO SLEEP`;
-  }
-  // set the image source attribute to the correct image
-  document.getElementById("changeImage").src = image;
-}
 function showTime() {
   let showDisplayTime = new Date();
   let hours = showDisplayTime.getHours();
@@ -88,7 +34,60 @@ function showTime() {
 }
 setInterval(showTime, 1000);
 
+function function2() {
+  // Check if the alarm should be triggered
+  const OptionOne = document.getElementById("OptionOne").value;
+  const OptionTwo = document.getElementById("OptionTwo").value;
+  const OptionThree = document.getElementById("OptionThree").value;
+  const OptionFour = document.getElementById("OptionFour").value;
 
+  const date = new Date();
+  const hours = date.getHours();
+
+ 
+  let wakeTime =
+    document.getElementById("OptionOne").options[
+      document.getElementById("OptionOne").selectedIndex
+    ].text;
+  let lunchTime =
+    document.getElementById("OptionTwo").options[
+      document.getElementById("OptionTwo").selectedIndex
+    ].text;
+  let napTime =
+    document.getElementById("OptionThree").options[
+      document.getElementById("OptionThree").selectedIndex
+    ].text;
+  let nightTime =
+    document.getElementById("OptionFour").options[
+      document.getElementById("OptionFour").selectedIndex
+    ].text;
+
+  // Update the text content of the guide div
+  document.getElementById("wakeTime").textContent = wakeTime;
+  document.getElementById("lunchTime").textContent = lunchTime;
+  document.getElementById("napTime").textContent = napTime;
+  document.getElementById("nightTime").textContent = nightTime;
+
+
+  if (hours === parseInt(OptionOne)) {
+    image = "./img/Component.png"; 
+    wakeTime.innerHTML;
+  } else if (hours === parseInt(OptionTwo)) {
+    image = "./img/lunch.jpg"; 
+    timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
+   
+  } else if (hours === parseInt(OptionThree)) {
+    image = "./img/afternoon.png"; 
+    timeText.innerHTML = `GOOD EVENING !!`;
+    
+  } else if (hours === parseInt(OptionFour)) {
+    image = "./img/Nightimg.jpg"; 
+    timeText.innerHTML = `GOOD NIGHT !!`;
+   
+  }
+  
+  document.getElementById("changeImage").src = image;
+}
 function showChanges() {
   let Time = new Date();
   let hour = Time.getHours();
