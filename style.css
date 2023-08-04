@@ -34,15 +34,7 @@
     
   }
 
-  
-  /* ---- Message style start ---- */
-  
-  @media screen and (max-width: 431px) {
-    .message-1 {
-      margin-left: auto;
-      margin-right: 20px;
-    }
-  }
+ 
   /* ---- Message style End ---- */
   
   /*------- logo and message style End ------*/
@@ -68,7 +60,7 @@
     justify-content: space-between;
   }
   .time {
-    font-family: "Bubblegum Sans", cursive;
+    font-family:  cursive;
     letter-spacing: 2px;
     font-size: 1.5rem;
     color: #3d087bde;
@@ -124,7 +116,7 @@
     border-radius: 5px;
     height: 40px;
     width: 40px;
-    font-family: "Bubblegum Sans", cursive;
+    font-family:  cursive;
   }
   .colon {
     font-size: 2.4rem;
@@ -151,16 +143,7 @@
     z-index: 1;
   }
   
-  @media screen and (max-width: 675px) {
-    .row-1,
-    .row-2 {
-      display: block;
-    }
-    .row-1 .col,
-    .row-2 .col {
-      width: 100%;
-    }
-  }
+  
   
   /*---- Real time style End -----*/
   /* ---Row-2 style--- */
@@ -216,14 +199,14 @@
     background-color: #ffffff;
     margin-top: 8px;
     padding: 15px;
-    font: normal normal 900 30px/40px Bauhaus Hv BT;
+    
     letter-spacing: 0px;
   }
   #greetText {
     color: #8e53f0;
-    font-family: "Bubblegum Sans", cursive;
+    /* font-family: "Bubblegum Sans", cursive; */
     font-weight: bold;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-size: 18px;
   }
   .morning {
@@ -237,13 +220,13 @@
   }
   #timeText {
     color: #ffffff;
-    font-family: "Bubblegum Sans", cursive;
+  
     font-weight: bold;
     letter-spacing: 1px;
     padding: 15px;
     font-size: 20px;
     text-align: center;
-    text-shadow: 3px 3px 2px black;
+    
   }
   #alarm {
     display: flex;
@@ -270,7 +253,7 @@
     border: none;
   }
   .a1 {
-    font-family: "Comfortaa", cursive;
+   font-weight: 600;
     font-size: 1.3rem;
     text-align: center;
     color: #ffffff;
@@ -329,8 +312,8 @@
   }
   .none {
     color: #f06af9;
-    font-family: "Comfortaa", cursive;
-    font-size: 12px;
+    /* font-family: "Comfortaa", cursive; */
+    font-size: 14px;
   }
   #timeImage {
     width: 100%;
@@ -346,6 +329,25 @@
   }
   @media screen and (max-width: 269px) {
     .digitalClock {
+      width: 100%;
+    }
+  }
+   
+  /* ---- Message style start ---- */
+  
+  @media screen and (max-width: 431px) {
+    .message-1 {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .row-1,
+    .row-2 {
+      display: block;
+    }
+    .row-1 .col,
+    .row-2 .col {
       width: 100%;
     }
   }
