@@ -77,7 +77,7 @@ function function2() {
     timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
    
   } else if (hours === parseInt(OptionThree)) {
-    image = "./img/afternoon.png"; 
+    image = "./img/afternoon.jpg"; 
     timeText.innerHTML = `GOOD EVENING !!`;
     
   } else if (hours === parseInt(OptionFour)) {
