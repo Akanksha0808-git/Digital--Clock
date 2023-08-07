@@ -71,7 +71,7 @@ function function2() {
 
   if (hours === parseInt(OptionOne)) {
     image = "./img/Component.png"; 
-    timeText.innerHTML=`GOOD MORNING !!`;
+    timeText.innerHTML=`GOOD MORNING !!!!!!!`;
   } else if (hours === parseInt(OptionTwo)) {
     image = "./img/lunch.jpg"; 
     timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
